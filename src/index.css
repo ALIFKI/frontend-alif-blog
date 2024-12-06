@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #151418;
+  font-family: 'Poppins';
+}
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #151418;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.brandLogo {
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.brandText {
+  position: relative;
+  color: var(--white);
+  font-size: 1.2rem;
+}
+
+.brandText::before {
+  content: "Blog";
+}
+
+.Brandcircle {
+  width: 35px;
+  height: 35px;
+  border-radius: 25px;
+  background-color: rgba(0, 132, 255, 1);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -5px;
+  z-index: -1;
+}
+
+.innerCircle {
+  width: 10px;
+  height: 10px;
+  border-radius: 25px;
+  background-color: var(--white);
+  position: absolute;
+  bottom: 0;
+  right: -2px;
+  z-index: -1;
+}
+
