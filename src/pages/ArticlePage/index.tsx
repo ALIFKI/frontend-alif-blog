@@ -59,7 +59,7 @@ const ArticlePage : React.FC
           <div className="prose prose-lg max-w-none">
             <div
               dangerouslySetInnerHTML={{
-                __html: marked(detail_articles?.blocks[0].body),
+                __html: marked(detail_articles?.blocks[0].body ?? ''),
               }}
             ></div>
             {/* <p>
